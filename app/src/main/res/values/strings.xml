@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">COVID-19 Tracking System</string>
+
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDqwR1UZhQDxlkMh5RemVapp25sDNq7Tyc</string>
+    <string name="title_activity_maps">Map</string>
+    <string-array name="myarray">
+        <item>value1</item>
+        <item>value2</item>
+    </string-array>
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#32E0C4"
+    tools:context=".CitiesFragment">
+
+    <RelativeLayout
+        android:id="@+id/SearchRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        >
+
+
+        <ProgressBar
+            android:id="@+id/progress_bar2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:layout_centerVertical="true"
+            android:outlineAmbientShadowColor="@color/black"
+            android:outlineSpotShadowColor="@color/black"
+            />
+
+
+        <EditText
+            android:id="@+id/SearchEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_toStartOf="@+id/SortBtn"
+            android:layout_toEndOf="@id/progress_bar2"
+            android:background="@drawable/shape_rectangle"
+            android:drawableStart="@drawable/ic_search_gray"
+            android:hint="Search"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/colorGray"
+            />
+        <ImageButton
+            android:id="@+id/SortBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/ic_sort_"
+            android:background="@android:color/transparent"
+            />
+
+        <ImageButton
+            android:id="@+id/imageButtonrefresh"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_refresh_black"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="40dp"
+            android:background="#32E0C4"/>
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/StatisticsRv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/rows_ofstats"
+
+
+        />
+
+</LinearLayout>

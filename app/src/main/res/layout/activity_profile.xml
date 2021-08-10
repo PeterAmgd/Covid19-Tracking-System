@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity2">
+
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/back_24"
+            android:onClick="Clickback_profile"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.041"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.038" />
+
+        <EditText
+
+            android:id="@+id/profile_user_email"
+            android:layout_width="321dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/input_bg"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawablePadding="10dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:text="Email"
+
+            android:textColor="#32E0C4"
+            android:textColorHint="#32E0C4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.391"
+            app:layout_constraintStart_toStartOf="@+id/imageView8"
+            app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+        <EditText
+
+            android:id="@+id/profile_user_lastname"
+            android:layout_width="321dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/input_bg"
+            android:drawableLeft="@drawable/ic_person"
+            android:drawablePadding="10dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:text="Lastname"
+            android:textColor="#32E0C4"
+            android:textColorHint="#32E0C4"
+            app:layout_constraintEnd_toEndOf="@+id/profile_username"
+            app:layout_constraintStart_toStartOf="@+id/profile_username"
+            app:layout_constraintTop_toBottomOf="@+id/profile_username" />
+
+        <EditText
+
+            android:id="@+id/profile_username"
+            android:layout_width="321dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="45dp"
+            android:background="@drawable/input_bg"
+            android:drawableLeft="@drawable/ic_person"
+            android:drawablePadding="10dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:text="Username"
+            android:textColor="#32E0C4"
+            android:textColorHint="#32E0C4"
+            app:layout_constraintLeft_toLeftOf="@id/profile_user_email"
+            app:layout_constraintRight_toRightOf="@id/profile_user_email"
+            app:layout_constraintTop_toBottomOf="@+id/profile_user_email" />
+
+        <EditText
+
+            android:id="@+id/profile_address"
+            android:layout_width="321dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="43dp"
+
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="47dp"
+            android:background="@drawable/input_bg"
+            android:drawableLeft="@drawable/ic_location"
+            android:drawablePadding="10dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:text="Address"
+            android:textColor="#32E0C4"
+            android:textColorHint="#32E0C4"
+            app:layout_constraintHorizontal_bias="0.477"
+            app:layout_constraintLeft_toLeftOf="@id/profile_Phone"
+            app:layout_constraintRight_toRightOf="@id/profile_Phone"
+            app:layout_constraintTop_toBottomOf="@+id/profile_Phone" />
+
+        <EditText
+
+            android:id="@+id/profile_Phone"
+            android:layout_width="321dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/input_bg"
+            android:drawableLeft="@drawable/ic_phone"
+            android:drawablePadding="10dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:text="Phone Number"
+            android:textColor="#32E0C4"
+            android:textColorHint="#32E0C4"
+            app:layout_constraintEnd_toEndOf="@+id/profile_user_lastname"
+            app:layout_constraintStart_toStartOf="@+id/profile_user_lastname"
+            app:layout_constraintTop_toBottomOf="@+id/profile_user_lastname" />
+
+        <EditText
+            android:id="@+id/profile_Age"
+            android:layout_width="321dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="45dp"
+            android:background="@drawable/input_bg"
+            android:drawableLeft="@drawable/ic_age"
+            android:drawablePadding="10dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:text="Age"
+            android:textColor="#32E0C4"
+            android:textColorHint="#32E0C4"
+            app:layout_constraintLeft_toLeftOf="@id/profile_address"
+            app:layout_constraintRight_toRightOf="@id/profile_address"
+            app:layout_constraintTop_toBottomOf="@+id/profile_address" />
+
+        <Button
+            android:id="@+id/profile_btn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="14dp"
+            android:background="@drawable/btn_bg"
+            android:text="update"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/profile_Age"
+            app:layout_constraintStart_toStartOf="@+id/profile_Age"
+            app:layout_constraintTop_toBottomOf="@+id/profile_Age" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
